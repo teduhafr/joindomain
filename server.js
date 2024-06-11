@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 
 
 const db = require("./src/model/index");
-db.sequelize.sync({alter:true, drop: false});
+db.sequelize.sync({alter:true});
 
 require('./src/routes/kirim.routes.js')(app);
 //require('./src/routes/aplikasi.routes.js')(app);

@@ -19,7 +19,8 @@ module.exports = app => {
                 antivirus: req.body.antivirus ?? '-' + " "+req.body.defender ?? '-',
                 zenworks: req.body.zenworks ?? 'tidak ada',
                 serial: req.body.serial ?? '-',
-                tipe: req.body.model ?? '-'
+                tipe: req.body.model ?? '-',
+                user: req.body.username ?? '-'
             }).then(data => {
                 if (data) {
                     res.send({

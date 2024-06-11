@@ -32,6 +32,10 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.STRING,
             defaultValue: "tipe"
         },
+        user: {
+            type: Sequelize.STRING,
+            defaultValue: "user"
+        },
         ram: {
             type: Sequelize.STRING,
             defaultValue: "128"
