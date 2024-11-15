@@ -8,6 +8,9 @@ module.exports = (sequelize, Sequelize) => {
         host: {
             type: Sequelize.STRING,
         },
+        NUP: {
+            type: Sequelize.STRING,
+        },
         domain: {
             type: Sequelize.STRING,
             defaultValue: "Ndomain"

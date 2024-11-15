@@ -10,6 +10,7 @@ module.exports = app => {
             console.log(req.body);
             dblaptop.create({
                 host: req.body.hostname,
+                NUP: req.body.NUP ?? '0',
                 domain: req.body.domain,
                 os: req.body.version,
                 manufacture: req.body.manufacturer,
